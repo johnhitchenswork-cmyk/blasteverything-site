@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post to All Social Media at Once | Blast Everything for UK Tradespeople</title>
+<meta name="description" content="Write one update about the job you just finished and post it to all 11 of your social channels at once. Blast Everything is the cross-platform posting app built for UK tradespeople and small business owners.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blasteverything.com/">
+<meta property="og:title" content="Post to All Social Media at Once | Blast Everything">
+<meta property="og:description" content="One message. Every platform. Posted before you have packed up the van. Built for UK tradespeople and small business owners.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blasteverything.com/">
+<style>
+  :root{
+    --navy:#0D1528;
+    --navy-2:#141f38;
+    --orange:#F57C20;
+    --orange-2:#ff944a;
+    --white:#ffffff;
+    --muted:#aeb8cc;
+    --line:rgba(255,255,255,0.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--navy);
+    color:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  a.btn{
+    display:inline-block;
+    background:var(--orange);
+    color:#1a0e00;
+    font-weight:800;
+    text-decoration:none;
+    padding:16px 30px;
+    border-radius:10px;
+    font-size:1.05rem;
+    letter-spacing:.2px;
+    transition:transform .12s ease, background .12s ease;
+  }
+  a.btn:hover{background:var(--orange-2);transform:translateY(-2px)}
+  a.btn.secondary{
+    background:transparent;
+    color:var(--white);
+    border:2px solid var(--line);
+  }
+  a.btn.secondary:hover{border-color:var(--orange);background:transparent}
+  /* HERO */
+  header.hero{
+    background:radial-gradient(1100px 500px at 70% -10%, rgba(245,124,32,0.18), transparent 60%), var(--navy);
+    padding:74px 0 64px;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    display:inline-block;
+    color:var(--orange);
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:.78rem;
+    margin-bottom:18px;
+  }
+  h1{
+    font-size:clamp(2.1rem,5.4vw,3.7rem);
+    line-height:1.08;
+    font-weight:900;
+    letter-spacing:-.5px;
+    max-width:16ch;
+  }
+  .sub{
+    color:var(--muted);
+    font-size:clamp(1.05rem,2.3vw,1.3rem);
+    margin:22px 0 30px;
+    max-width:52ch;
+  }
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .trust{margin-top:26px;color:var(--muted);font-size:.95rem}
+  .trust strong{color:var(--white)}
+  /* PLATFORM PILLS */
+  .platforms{padding:46px 0;border-bottom:1px solid var(--line)}
+  .platforms h2{font-size:1.1rem;font-weight:700;color:var(--muted);text-align:center;margin-bottom:22px}
+  .pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .pill{
+    border:1px solid var(--line);
+    background:var(--navy-2);
+    padding:10px 18px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:.95rem;
+  }
+  /* SECTIONS */
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  h2.section-title{font-size:clamp(1.6rem,3.6vw,2.4rem);font-weight:900;letter-spacing:-.4px;margin-bottom:14px}
+  .lead{color:var(--muted);font-size:1.1rem;max-width:60ch;margin-bottom:36px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{
+    background:var(--navy-2);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:26px;
+  }
+  .card .num{color:var(--orange);font-weight:900;font-size:1.4rem;margin-bottom:10px}
+  .card h3{font-size:1.2rem;font-weight:800;margin-bottom:8px}
+  .card p{color:var(--muted)}
+  /* STEPS */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  /* PROBLEM */
+  .problem{background:var(--navy-2)}
+  .problem ul{list-style:none;margin-top:10px}
+  .problem li{padding:12px 0;padding-left:30px;position:relative;color:var(--white);border-bottom:1px solid var(--line)}
+  .problem li:before{content:"\2192";position:absolute;left:0;color:var(--orange);font-weight:900}
+  /* PRICING */
+  .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:760px;margin:0 auto}
+  .plan{
+    background:var(--navy-2);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:32px;
+    text-align:center;
+  }
+  .plan.popular{border-color:var(--orange);position:relative}
+  .plan.popular .tag{
+    position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+    background:var(--orange);color:#1a0e00;font-weight:800;font-size:.75rem;
+    text-transform:uppercase;letter-spacing:1px;padding:5px 14px;border-radius:999px;
+  }
+  .plan .name{font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+  .plan .amount{font-size:2.6rem;font-weight:900;margin:10px 0 2px}
+  .plan .per{color:var(--muted);margin-bottom:20px}
+  /* FAQ */
+  .faq details{
+    background:var(--navy-2);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:18px 22px;
+    margin-bottom:14px;
+  }
+  .faq summary{font-weight:800;font-size:1.08rem;cursor:pointer;list-style:none}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:after{content:"+";float:right;color:var(--orange);font-weight:900}
+  .faq details[open] summary:after{content:"\2013"}
+  .faq p{color:var(--muted);margin-top:12px}
+  /* FINAL */
+  .final{text-align:center;background:radial-gradient(900px 400px at 50% 120%, rgba(245,124,32,0.20), transparent 60%), var(--navy)}
+  .final h2{margin-bottom:16px}
+  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{color:var(--muted)}
+  @media(max-width:780px){
+    .grid,.steps{grid-template-columns:1fr}
+    .price-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<nav style="background:#0D1528;border-bottom:1px solid #1f2b46;position:sticky;top:0;z-index:50"><div style="max-width:1080px;margin:0 auto;padding:12px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"><a href="index.html" style="font-weight:900;letter-spacing:.4px;color:#0D1528;text-decoration:none;font-size:1.05rem;margin-right:auto">Blast Everything</a><a href="post-to-all-social-media-at-once.html" style="color:#cdd5e4;text-decoration:none;font-weight:600;font-size:.95rem">Post Everywhere</a><a href="social-media-time-savers-tradespeople.html" style="color:#cdd5e4;text-decoration:none;font-weight:600;font-size:.95rem">Time-Savers</a><a href="social-media-post-ideas-tradespeople.html" style="color:#cdd5e4;text-decoration:none;font-weight:600;font-size:.95rem">30 Post Ideas</a><a href="cross-posting-app-vs-scheduler.html" style="color:#cdd5e4;text-decoration:none;font-weight:600;font-size:.95rem">App vs Scheduler</a><a href="https://blasteverything.com/?utm_source=ghpages&utm_medium=content" target="_blank" rel="noopener" style="background:#F57C20;color:#1a0e00;text-decoration:none;font-weight:800;padding:9px 18px;border-radius:8px;font-size:.92rem">Visit Blast Everything</a></div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Built for UK tradespeople and small business</span>
+    <h1>One job. One message. Posted everywhere before you have packed up the van.</h1>
+    <p class="sub">You do not need to be good at social media. Describe the job once, and Blast Everything writes and formats it for all 11 of your channels, so the next customer who looks you up sees a firm that is clearly busy and worth booking.</p>
+    <div class="cta-row">
+      <a class="btn" href="https://blasteverything.com/?utm_source=ghpages&utm_medium=content&utm_campaign=landing_all_platforms">Start posting everywhere from one message</a>
+      <a class="btn secondary" href="#how">See how it works</a>
+    </div>
+    <p class="trust">Write one update. It goes out to <strong>all 11 of your channels</strong> at once. No copy-paste, no app-hopping.</p>
+  </div>
+</header>
+
+<div class="platforms">
+  <div class="wrap">
+    <h2>One message goes out to every channel you use</h2>
+    <div class="pills">
+      <span class="pill">Facebook</span>
+      <span class="pill">Instagram</span>
+      <span class="pill">X</span>
+      <span class="pill">LinkedIn</span>
+      <span class="pill">TikTok</span>
+      <span class="pill">YouTube</span>
+      <span class="pill">Pinterest</span>
+      <span class="pill">Google Business Profile</span>
+      <span class="pill">WhatsApp</span>
+      <span class="pill">Email</span>
+      <span class="pill">Reddit</span>
+    </div>
+  </div>
+</div>
+
+<section class="problem">
+  <div class="wrap">
+    <h2 class="section-title">You do great work. Hardly anyone sees it.</h2>
+    <p class="lead">Most tradespeople finish a brilliant job, mean to post about it, and never get round to it. Then they look quiet online and lose the enquiry to a firm that just looks busier. The thing you are short of is not marketing skill. It is time.</p>
+    <ul>
+      <li>No time to write a Facebook post, then redo it for Instagram, then again for LinkedIn</li>
+      <li>Posting to one platform only means the customers checking the other ten never see you</li>
+      <li>Agencies cost far more than a monthly app and still need you to feed them the content</li>
+      <li>The photos are freshest the moment the job is done, not three weeks later at the desk</li>
+    </ul>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2 class="section-title">How it works</h2>
+    <p class="lead">Three steps, on your phone, between jobs.</p>
+    <div class="steps">
+      <div class="card">
+        <div class="num">1</div>
+        <h3>Write it once</h3>
+        <p>Type a plain-English line or two about the job you just finished. Add a photo if you have one.</p>
+      </div>
+      <div class="card">
+        <div class="num">2</div>
+        <h3>Blast Everything formats it</h3>
+        <p>The same update comes out reading naturally on each platform, not one bland message pasted everywhere.</p>
+      </div>
+      <div class="card">
+        <div class="num">3</div>
+        <h3>It posts to all 11 channels</h3>
+        <p>One tap and you are live everywhere, before you have loaded the tools back in the van.</p>
+      </div>
+    </div>
+    <div style="margin-top:36px">
+      <a class="btn" href="https://blasteverything.com/?utm_source=ghpages&utm_medium=content&utm_campaign=landing_how_it_works">Start posting everywhere</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Why this beats doing it yourself</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Save the time you do not have</h3>
+        <p>One message in, eleven platform-ready posts out. No reformatting per platform, no jumping between apps.</p>
+      </div>
+      <div class="card">
+        <h3>Look busy, win the next job</h3>
+        <p>When a customer checks you out, they see a firm that is clearly active and worth booking.</p>
+      </div>
+      <div class="card">
+        <h3>Made for UK trades</h3>
+        <p>Built for builders, plumbers, electricians and local service firms, not for agencies with a marketing department.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title" style="text-align:center">Two honest plans. Pick one and go.</h2>
+    <p class="lead" style="margin:0 auto 36px;text-align:center">No gimmicks. Choose the plan that fits how busy you are.</p>
+    <div class="price-grid">
+      <div class="plan">
+        <div class="name">Starter</div>
+        <div class="amount">&pound;9.99</div>
+        <div class="per">per month</div>
+        <a class="btn secondary" href="https://blasteverything.com/?utm_source=ghpages&utm_medium=content&utm_campaign=landing_pricing_starter" style="display:block">Choose Starter</a>
+      </div>
+      <div class="plan popular">
+        <span class="tag">Most popular</span>
+        <div class="name">Pro</div>
+        <div class="amount">&pound;24.99</div>
+        <div class="per">per month</div>
+        <a class="btn" href="https://blasteverything.com/?utm_source=ghpages&utm_medium=content&utm_campaign=landing_pricing_pro" style="display:block">Choose Pro</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2 class="section-title">Questions tradespeople ask</h2>
+    <details>
+      <summary>I am not good at social media. Will this still work for me?</summary>
+      <p>That is exactly who it is built for. You write a normal sentence about the job you did. Blast Everything does the formatting and posting for all 11 channels. You do not need to know anything about marketing.</p>
+    </details>
+    <details>
+      <summary>How long does it take to post?</summary>
+      <p>Under a minute. You write the update once on your phone, tap once, and it goes out everywhere. It is designed to be done between jobs, not at a desk.</p>
+    </details>
+    <details>
+      <summary>Which platforms does it post to?</summary>
+      <p>Facebook, Instagram, X, LinkedIn, TikTok, YouTube, Pinterest, Google Business Profile, WhatsApp, Email and Reddit. Eleven channels from one message.</p>
+    </details>
+    <details>
+      <summary>What does it cost?</summary>
+      <p>Starter is &pound;9.99 per month and Pro is &pound;24.99 per month. Pick the one that matches how often you post.</p>
+    </details>
+    <details>
+      <summary>Do I have to post to all 11 every time?</summary>
+      <p>No. You choose where each update goes. The point is that posting to all of them is now as quick as posting to one.</p>
+    </details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="section-title">Stop being the best-kept secret in your trade.</h2>
+    <p class="lead" style="margin:0 auto 30px">Write one update about your next job and let it land on every channel at once.</p>
+    <a class="btn" href="https://blasteverything.com/?utm_source=ghpages&utm_medium=content&utm_campaign=landing_final_cta">Start posting everywhere from one message</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Blast Everything. One message, every platform. <a href="https://blasteverything.com/?utm_source=ghpages&utm_medium=content&utm_campaign=landing_footer">blasteverything.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
